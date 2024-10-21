@@ -11,7 +11,7 @@ class Status{
     // Create Status
     public function create_status($db)
     {
-        $statement = $db->prepare("insert into status(status) values(:status)");
+        $statement = $db->prepare("insert into status(status) values(?)");
         
         $statement->bind_param("s", $this->status);
 
@@ -22,8 +22,14 @@ class Status{
     public static function get_all_status($db)
     {
         $statement = $db->prepare("select * from status");
-        $status = $statement->execute();
-        return $status;
+        $statement->execute();
+        $result = $statement->get_result();
+        if($result){
+            $status = $result->fetch_all(MYSQLI_ASSOC);
+            return $status;
+        }else{
+            return [];
+        }
     }
 
     // Update Category

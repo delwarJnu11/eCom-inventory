@@ -15,7 +15,7 @@ class TransactionType{
     // Create Transaction type
     public function create_transaction_type($db)
     {
-        $statement = $db->prepare("insert into transaction_type(name, factor, comment) values(:name, :factor, :comment)");
+        $statement = $db->prepare("insert into transaction_type(name, factor, comment) values(?, ?, ?)");
         $statement->bind_param("sis", $this->name, $this->factor, $this->comment);
         return $statement->execute();
     }
@@ -24,8 +24,14 @@ class TransactionType{
     public static function get_all_transaction_type($db)
     {
         $statement = $db->prepare("select * from transaction_type");
-        $transaction_types = $statement->execute();
-        return $transaction_types;
+        $statement->execute();
+        $result = $statement->get_result();
+        if($result){
+            $transaction_types = $result->fetch_all(MYSQLI_ASSOC);
+            return $transaction_types;
+        }else{
+            return [];
+        }
     }
 
     // Update Transaction Types

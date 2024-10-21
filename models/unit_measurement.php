@@ -11,7 +11,7 @@ class UnitMeasurement{
     // Create Unit Measurement Name
     public function create_unit_measurement($db)
     {
-        $statement = $db->prepare("insert into uom(name) values(:name)");
+        $statement = $db->prepare("insert into uom(name) values(?)");
         $statement->bind_param("s", $this->name);
         return $statement->execute();
     }

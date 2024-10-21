@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="container mx-auto">
-        <h2 class="text-3xl text-center text-green-500 font-semibold my-6">See All Products</h2>
+        <div class="flex justify-between items-center mt-10">
+            <h2 class="text-3xl text-center text-green-500 font-semibold my-6">See All Products</h2>
+            <a href="/add_product" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline">Add Product</a>
+        </div>
         <table class="min-w-full bg-white border border-gray-300">
             <thead>
                 <tr>

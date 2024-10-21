@@ -6,16 +6,23 @@
         <a href="/" class="text-gray-300 hover:text-white">Home</a>
       </li>
       <li>
-        <a href="/add_product" class="text-gray-300 hover:text-white">Add Product</a>
-      </li>
-      <li>
         <a href="/products" class="text-gray-300 hover:text-white">Products</a>
       </li>
       <li>
-        <a href="/add_category" class="text-gray-300 hover:text-white">Add Category</a>
+        <a href="/categories" class="text-gray-300 hover:text-white">All Category</a>
       </li>
       <li>
-        <a href="/categories" class="text-gray-300 hover:text-white">All Category</a>
+      <li>
+        <a href="/measurements" class="text-gray-300 hover:text-white">All Measurements</a>
+      </li>
+      <li>
+        <a href="/all_status" class="text-gray-300 hover:text-white">All Status</a>
+      </li>
+      <li>
+        <a href="/transaction_types" class="text-gray-300 hover:text-white">Transaction Types</a>
+      </li>
+      <li>
+        <a href="/warehouses" class="text-gray-300 hover:text-white">Warehouses</a>
       </li>
     </ul>
   </div>
