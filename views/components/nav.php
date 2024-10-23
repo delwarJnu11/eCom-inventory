@@ -24,6 +24,9 @@
       <li>
         <a href="/warehouses" class="text-gray-300 hover:text-white">Warehouses</a>
       </li>
+      <li>
+        <a href="/stocks" class="text-gray-300 hover:text-white">Stocks</a>
+      </li>
     </ul>
   </div>
 </nav>

@@ -17,6 +17,8 @@ $routes = [
     "/transaction_types" => "controllers/transaction_type/display_transaction_controller.php",
     "/add_warehouse" => "controllers/warehouse/create_warehouse_controller.php",
     "/warehouses" => "controllers/warehouse/display_warehouse_controller.php",
+    "/add_stock" => "controllers/stock/create_stock_controller.php",
+    "/stocks" => "controllers/stock/display_stock_controller.php",
 ];
 
 function controll_routes($uri, $routes)
