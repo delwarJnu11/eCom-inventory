@@ -27,6 +27,12 @@
       <li>
         <a href="/stocks" class="text-gray-300 hover:text-white">Stocks</a>
       </li>
+      <li>
+        <a href="/clients" class="text-gray-300 hover:text-white">Customers</a>
+      </li>
+      <li>
+        <a href="/suppliers" class="text-gray-300 hover:text-white">Suppliers</a>
+      </li>
     </ul>
   </div>
 </nav>

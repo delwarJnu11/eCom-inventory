@@ -19,6 +19,10 @@ $routes = [
     "/warehouses" => "controllers/warehouse/display_warehouse_controller.php",
     "/add_stock" => "controllers/stock/create_stock_controller.php",
     "/stocks" => "controllers/stock/display_stock_controller.php",
+    "/add_client" => "controllers/client/create_client_controller.php",
+    "/clients" => "controllers/client/display_client_controller.php",
+    "/add_supplier" => "controllers/supplier/create_supplier_controller.php",
+    "/suppliers" => "controllers/supplier/display_supplier_controller.php",
 ];
 
 function controll_routes($uri, $routes)
